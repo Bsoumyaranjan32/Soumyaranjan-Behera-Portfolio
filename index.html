@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soumyaranjan Behera - Portfolio</title>
+    <link rel="stylesheet" href="src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/soumyaranjan.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header Section start -->
+
+    <div class="header-container">
+      <div class="logo">
+        <a href="#">Soumyaranjan<span class="surname">Behera</span></a>
+      </div>
+        <ul class="navbar">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#About Me">About Me</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <div class="nav-actions">
+        <i class="ri-moon-fill" id="theme-toggle"></i>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- header Section end -->
+
+    <!-- Home Section start -->
+
+    <div class="section" id="home">
+      <div class="section-container">
+        <div class="content">
+          <p>Hello there, I'm</p>
+          <h1 id="title">Soumyaranjan Behera</h1>
+          <p id="description">I am into <span id="typed-text"></span></p>
+
+          <div class="socila-icon-container">
+            <p class="connect">Connect with me:</p>
+            <div class="social-icon">
+              <div class="github icon">
+                <!-- <div class="tooltip">GitHub</div> -->
+                <a href="https://github.com/Bsoumyaranjan32"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+
+              <div class="linkedin icon">
+                <!-- <div class="tooltip">LinkedIn</div> -->
+                <a
+                  href="https://www.linkedin.com/in/soumyaranjan-behera-497ba833a/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+
+              <!-- <div class="Email icon">
+                <div class="tooltip">LinkedIn</div>
+                <a
+                  href="bsoumyaranjan370@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i></a>
+              </div> -->
+
+              <div class="twitter icon">
+                <!-- <div class="tooltip">Twitter</div> -->
+                <a href="https://x.com/__soumya__08__"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <!-- <div class="instagram icon">
+                <div class="tooltip">Instagram</div>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div> -->
+
+              <!-- <div class="facebook icon">
+                <div class="tooltip">Facebook</div>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div id="buttons" class="flex items-center gap-4">
+            <!-- <button class="abt-btn inline-flex items-center justify-center w-fit bg-[#6471d6] text-white border-2 border-[#6471d6] rounded-[30px] shadow-[0_8px_20px_rgba(100,113,214,0.3)] transition-all duration-300 ease-in-out hover:bg-[#5360c1] hover:border-[#5360c1] hover:-translate-y-[3px] hover:shadow-[0_12px_25px_rgba(100,113,214,0.4)]">
+              <a href="#About Me" class="arrow inline-flex items-center gap-2 px-8 py-3 text-[1.1rem] font-semibold text-white no-underline group"
+              >About Me<i class="fa-solid fa-angle-down text-[14px] ml-[-5px] transition-transform duration-300 group-hover:translate-y-[3px]"></i
+              ></a>
+            </button> -->
+
+            <!--About Button-->
+            <button id="view-btn" class="group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#6471d6] border border-[#3b467c] font-semibold  hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] transition-all duration-300">
+              <a href="#About Me" class="arrow relative z-10 flex items-center gap-2"
+              >About Me<i class="fa-solid fa-angle-down text-sm transition-transform duration-300 group-hover:translate-y-[3px]"></i
+              ></a>
+            </button>
+
+            <!--View Projects Button-->
+            <button id="view-btn" class="group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#0b1330] border border-[#3b467c] font-semibold  hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] transition-all duration-300">
+              <a href="#projects" class="arrow relative z-10 flex items-center gap-2"
+              >View Projects<i class="fa-solid fa-angle-down text-sm transition-transform duration-300 group-hover:translate-y-[3px]"></i
+              ></a>
+            </button>
+          </div>   
+        </div>
+
+        <div class="image">
+          <img src="images/somu.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Section end -->
+
+    <!-- about section start -->
+
+    <div class="about-section" id="About Me">
+      <h1>About Me</h1>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="images/IMG_0321.jpg" alt="" />
+        </div>
+
+        <div class="about-content">
+          <h2>I'm Soumyaranjan Behera</h2>
+          <h3>Frontend Developer</h3>
+            <p class="about-text">I am a passionate frontend developer with a strong foundation in web technologies. I have completed TYBCOM and continue developing my skills in web development, software engineering, and emerging technologies. I am a quick learner, highly adaptable, and committed to building innovative and user-centric digital solutions. I enjoy solving complex problems and continuously improving my technical abilities. Let's connect and create something amazing together!</p>
+
+          <button id="resume-btn" class="group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#6471d6] border border-[#3b467c] font-semibold  hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] transition-all duration-300" onclick="resumeBtn ()">
+            <a class="arrow relative z-10 flex items-center gap-2">Download CV<i class="ri-arrow-down-line text-sm transition-transform duration-300 group-hover:translate-y-[3px]"></i></a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section end -->
+
+    <!-- Skills Section Start -->
+    <div class="skills-section" id="Skills">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #e34f26;"><i class="fa-brands fa-html5"></i></div>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #1572b6;"><i class="fa-brands fa-css3-alt"></i></div>
+          <span>CSS</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #38bdf8;">
+            <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em">
+              <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
+            </svg>
+          </div>
+          <span>Tailwind CSS</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #f7df1e;"><i class="fa-brands fa-js"></i></div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #61dafb;"><i class="fa-brands fa-react"></i></div>
+          <span>ReactJS</span>
+        </div>
+        <!-- <div class="skill-box">
+          <div class="skill-icon-circle">
+            <img src="images/typescript-er065NMZ.png" alt="TypeScript" style="width: 35px; height: 35px; object-fit: contain;">
+          </div>
+          <span>Typescript</span>
+        </div> -->
+        <!-- <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #f05032;"><i class="fa-brands fa-git-alt"></i></div>
+          <span>Git</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle"><i class="fa-brands fa-github"></i></div>
+          <span>GitHub</span>
+        </div> -->
+        <!-- <div class="skill-box">
+          <div class="skill-icon-circle">
+            <img src="images/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-shadow-tal-revivo.webp" alt="JQuery" style="width: 35px; height: 35px; object-fit: contain;">
+          </div>
+          <span>JQuery</span>
+        </div> -->
+      </div>
+    </div>
+    <!-- Skills Section End -->
+
+    <!-- Tools Section Start -->
+    <div class="skills-section" id="Skills">
+      <h1>Tools</h1>
+      <div class="skills-grid">
+        <!-- <div class="skill-box">
+          <div class="skill-icon-circle">
+            <img src="images/typescript-er065NMZ.png" alt="TypeScript" style="width: 35px; height: 35px; object-fit: contain;">
+          </div>
+          <span>Typescript</span>
+        </div> -->
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #007acc;">
+            <!-- <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width: 1em; height: 1em;">
+              <path d="M18.16 2.12a1.5 1.5 0 0 1 1.84 1.46v16.84a1.5 1.5 0 0 1-1.84 1.46l-10.1-3.05a1.5 1.5 0 0 1-.62-.39L2.35 12.9a1.5 1.5 0 0 1 0-2.12l5.09-5.54a1.5 1.5 0 0 1 .62-.39l10.1-3.05ZM9.2 8.27 5.67 12l3.53 3.73 4.44 1.32V6.95L9.2 8.27Zm5.65 7.46 2.64.79V7.48l-2.64.79v7.46Z" />
+            </svg> -->
+            <i class="fas fa-code"></i>
+          </div>
+          <span>VS Code</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #f05032;"><i class="fa-brands fa-git-alt"></i></div>
+          <span>Git</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle"><i class="fa-brands fa-github"></i></div>
+          <span>GitHub</span>
+        </div>
+        <!-- <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #10a37f;"><i class="ri-openai-fill"></i></div>
+          <span>Chatgpt</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon-circle" style="color: #4285f4;"><i class="ri-gemini-fill"></i></div>
+          <span>Gemini</span>
+        </div> -->
+        <!-- <div class="skill-box">
+          <div class="skill-icon-circle">
+            <img src="images/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-shadow-tal-revivo.webp" alt="JQuery" style="width: 35px; height: 35px; object-fit: contain;">
+          </div>
+          <span>JQuery</span>
+        </div> -->
+      </div>
+    </div>
+    <!-- Tools Section End -->
+
+    <!-- Optimization Card Section Start -->
+    <section class="py-16 px-6 bg-[#071028] optimization-section">
+      <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="opt-card bg-[#141414] border border-white/10 rounded-[22px] p-6 sm:p-8 shadow-[0_18px_50px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:-translate-y-1 hover:border-white/15">
+          <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#123048] flex items-center justify-center text-[#1ea7ff] text-3xl shadow-[0_0_0_10px_rgba(30,167,255,0.04)]">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+
+          <h3 class="mt-8 text-2xl sm:text-[1.5rem] font-extrabold text-[#f2f2f2]">Optimization</h3>
+
+          <p class="mt-4 max-w-2xl text-[1.05rem] leading-8 text-[#a7a7a7]">
+            Boosting the performance of existing websites through strategic optimization.
+            From enhancing loading speeds to refining user interfaces, we improve search engine
+            rankings and user satisfaction.
+          </p>
+        </div>
+
+        <div class="opt-card bg-[#141414] border border-white/10 rounded-[22px] p-6 sm:p-8 shadow-[0_18px_50px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:-translate-y-1 hover:border-white/15">
+          <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#123048] flex items-center justify-center text-[#1ea7ff] text-3xl shadow-[0_0_0_10px_rgba(30,167,255,0.04)]">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+
+          <h3 class="mt-8 text-2xl sm:text-[1.5rem] font-extrabold text-[#f2f2f2]">Responsive Designs</h3>
+
+          <p class="mt-4 max-w-2xl text-[1.05rem] leading-8 text-[#a7a7a7]">
+            Creating websites with responsive designs that seamlessly adapt to various devices.
+            Ensuring a consistent and optimal user experience, whether accessed on a desktop,
+            tablet, or smartphone.
+          </p>
+        </div>
+
+        <div class="opt-card bg-[#141414] border border-white/10 rounded-[22px] p-6 sm:p-8 shadow-[0_18px_50px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:-translate-y-1 hover:border-white/15">
+          <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#123048] flex items-center justify-center text-[#1ea7ff] text-3xl shadow-[0_0_0_10px_rgba(30,167,255,0.04)]">
+            <i class="fa-solid fa-puzzle-piece"></i>
+          </div>
+
+          <h3 class="mt-8 text-2xl sm:text-[1.5rem] font-extrabold text-[#f2f2f2]">Problem Solving</h3>
+
+          <p class="mt-4 max-w-2xl text-[1.05rem] leading-8 text-[#a7a7a7]">
+            Strong analytical skills for debugging, troubleshooting, and implementing efficient solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Optimization Card Section End -->
+
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+          <div class="project-box">
+                <div class="project-img">
+                    <img src="images/To-do-list.jpg" alt="To Do List">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-tailwind">Tailwind</span>
+                        <span class="tag-js">JavaScript</span>
+                        <span class="tag-react">React Js</span>
+                    </div>
+                    <h3>To-Do-List</h3>
+                    <p class="intro-text">A To-Do List is a personal management tool used to list tasks, goals, or activities that need to be completed within a specific timeframe.</p>
+                    <div class="project-links">
+                        <a href="https://to-do-list-app.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="images/BMI Calculate.jpg" alt="BMI Calculator">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                        <span class="tag-tailwind">Tailwind</span>
+                    </div>
+                    <h3>BMI-Calculator</h3>
+                    <p class="intro-text">Body Mass Index (BMI) is a number calculated from your weight and height to help assess body fat and overall health.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://bmi-calculator.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="images/text-to-image.jpg" alt="Ai Image Generate">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-tailwind">Tailwind</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Ai Image Generate</h3>
+                    <p class="intro-text">AI-powered image generation web app where users can create stunning images from text prompts. Built with HTML, JavaScript, and Tailwind CSS for a modern and responsive UI.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://ai-image-generate.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                  <img class="h-32 md:h-40 w-full object-cover" src="https://img.magnific.com/free-vector/currency-exchange-euro-rupee-golden-sign-background_1017-60308.jpg?ga=GA1.1.1939630192.1779808187&semt=ais_test_b&w=740&q=80" alt="Currency Converter">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Currency Converter</h3>
+                    <p class="intro-text">A Currency Converter that converts amounts between different currencies using up-to-date exchange rates, providing fast, accurate conversions with a clean, user-friendly interface.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://currency-converter.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="https://t3.ftcdn.net/jpg/09/55/39/32/240_F_955393249_L8pnJDiRHv6OviwOZM9miU227XekmGjv.jpg" alt="Neon Snake Game">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Neon Snake Game</h3>
+                    <p class="intro-text">Neon Snake Game is an arcade-style browser game with retro neon visuals and smooth controls. Guide the snake to collect glowing food, grow longer, and beat high scores while avoiding collisions; designed for quick, addictive gameplay across desktop and mobile.</p>
+                    <div class="project-links">
+                        <a href="https://neon-snake-game.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1705077296278-d82dd5c8662f?q=80&w=809&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weather App">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Weather App</h3>
+                    <p class="intro-text">A Weather App that provides real-time weather forecasts, current temperature, and atmospheric conditions using a weather API.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://weather-app.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Expense Tracker">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Expense Tracker</h3>
+                    <p class="intro-text">A comprehensive Expense Tracker designed to help users monitor daily spending, categorize expenses, and maintain financial health with intuitive visual insights.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://expense-tracker.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="images/typingspeedtest.png" alt="Typing Speed Test">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Typing Speed Test </h3>
+                    <p class="intro-text">A sleek and interactive web application designed to test and improve typing accuracy and speed. It features a real-time WPM (Words Per Minute) calculator, a live countdown timer, and dynamic text highlighting to track user progress instantly.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://typing-speed-test.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="project-box">
+                <div class="project-img">
+                    <img src="images/Generate password.png" alt="Simple Calculator">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>To Generate a Random Password</h3>
+                    <p class="intro-text"></p>
+                    
+                    <div class="project-links">
+                        <a href="https://simple-calculator.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>  
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Simple Calculator">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Simple-Calculator</h3>
+                    <p class="intro-text">Calculator is used for performing basic mathematical operations like Addition, subtraction, multiplication, and division.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://simple-calculator.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="images/Age Calculator.png" alt="Age Calculator">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Age Calculator</h3>
+                    <p class="intro-text">An Age Calculator is a simple and useful tool that quickly calculates a person's exact age from their date of birth in years, months, and days.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://age-calculator.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="images/FAQ.png" alt="FAQ">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                        <span class="tag-js">JavaScript</span>
+                    </div>
+                    <h3>Accordion / FAQ</h3>
+                    <p class="intro-text">An interactive and responsive FAQ accordion component built with vanilla JavaScript. Features smooth toggle animations, clean semantic markup, and optimized user experience for navigating frequent queries.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://accordion-faq.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="images/tech book.jpg" alt="Tech Book">
+                </div>
+                <div class="project-content">
+                    <div class="skill-tags">
+                        <span class="tag-html">HTML5</span>
+                        <span class="tag-css">CSS3</span>
+                    </div>
+                    <h3>Tech book club landing page</h3>
+                    <p class="intro-text">A beautifully structured and fully responsive landing page for a Tech Book Club. Built entirely with clean semantic HTML5 and modern CSS3 layout techniques like Flexbox/Grid, focusing on pixel-perfect UI design, elegant typography, and a seamless user experience across all devices.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://tech-book-club.devpixels.tech/" target="_blank" class="live-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <button id="view-btn" class="group mx-auto block bg-[linear-gradient(135deg,#6471d6,#4a54a3)] py-3 px-[30px] rounded-full shadow-[0_8px_20px_rgba(100,113,214,0.3)] text-white font-medium transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_12px_24px_rgba(100,113,214,0.4)] cursor-pointer" onclick="window.open('https://github.com/Bsoumyaranjan32','_blank')">
+          <a class="flex items-center gap-2" href="https://github.com/Bsoumyaranjan32" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>View more Projects
+            <!-- Hover arrow circle (appears on button hover) -->
+            <!-- <span class="ml-3 inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white bg-transparent opacity-0 translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:bg-white/10 group-hover:text-white pointer-events-none">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span> -->
+          </a>
+        </button>
+    </section>
+
+    <!-- Projects Section End -->
+
+    <!-- Contact Section (Tailwind) -->
+    <section id="contact" class="tw-contact-section bg-[#071028] text-white py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-extrabold">Get In Touch</h2>
+          <div class="w-24 h-1 bg-indigo-400 rounded-full mx-auto mt-4 shadow-md"></div>
+          <p class="text-gray-400 mt-4">If you have any questions or would like to work together, feel free to reach out!</p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 items-stretch">
+          <!-- Info / Cards -->
+          <div class="space-y-6 h-full">
+            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 h-full flex flex-col justify-between">
+              <h3 class="text-xl font-semibold">Let's Work Together</h3>
+              <p class="text-gray-300 mt-2">I'm a Frontend Developer building intuitive, responsive web apps — happy to collaborate on UI-focused projects.</p>
+
+              <div class="mt-6 space-y-3">
+                <a href="mailto:bsoumyaranjan370@gmail.com" class="group flex items-center gap-4 p-4 rounded-lg hover:bg-white/10 transition">
+                  <div class="w-12 h-12 rounded-lg bg-white/6 flex items-center justify-center text-green-400 text-lg"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <h4 class="font-medium">Email</h4>
+                    <p class="text-sm text-gray-300">bsoumyaranjan370@gmail.com</p>
+                  </div>
+                  <div class="ml-auto flex-shrink-0 w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-300 bg-transparent opacity-0 translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:bg-white/10 group-hover:text-white">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/soumyaranjan-behera-497ba833a/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 p-4 rounded-lg hover:bg-white/10 transition">
+                  <div class="w-12 h-12 rounded-lg bg-white/6 flex items-center justify-center text-blue-500 text-lg"><i class="fa-brands fa-linkedin"></i></div>
+                  <div>
+                    <h4 class="font-medium">LinkedIn</h4>
+                    <p class="text-sm text-gray-300">Connect with me professionally</p>
+                  </div>
+                  <div class="ml-auto flex-shrink-0 w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-300 bg-transparent opacity-0 translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:bg-white/10 group-hover:text-white">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+
+                <a href="https://github.com/Bsoumyaranjan32" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 p-4 rounded-lg hover:bg-white/10 transition">
+                  <div class="w-12 h-12 rounded-lg bg-white/6 flex items-center justify-center text-gray-300 text-lg"><i class="fa-brands fa-github"></i></div>
+                  <div>
+                    <h4 class="font-medium">GitHub</h4>
+                    <p class="text-sm text-gray-300">Check out my projects and code</p>
+                  </div>
+                  <div class="ml-auto flex-shrink-0 w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-300 bg-transparent opacity-0 translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:bg-white/10 group-hover:text-white">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 h-full flex flex-col">
+            <form id="tailwind-contact-form" action="https://formsubmit.co/bsoumyaranjan370@gmail.com" method="POST" target="_blank" class="space-y-4 flex flex-col flex-grow">
+              <input type="text" name="_honey" style="display:none" autocomplete="off" tabindex="-1">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="tw-name" class="block text-sm font-medium text-gray-200 mb-1">Name</label>
+                  <input id="tw-name" name="name" required class="w-full bg-transparent border border-white/10 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="John Doe" />
+                </div>
+                <div>
+                  <label for="tw-email" class="block text-sm font-medium text-gray-200 mb-1">Email</label>
+                  <input id="tw-email" name="email" type="email" required class="w-full bg-transparent border border-white/10 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="john@example.com" />
+                </div>
+              </div>
+
+              <div>
+                <label for="tw-subject" class="block text-sm font-medium text-gray-200 mb-1">Subject</label>
+                <input id="tw-subject" name="subject" class="w-full bg-transparent border border-white/10 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Project inquiry" required />
+              </div>
+
+              <div>
+                <label for="tw-message" class="block text-sm font-medium text-gray-200 mb-1">Message</label>
+                <textarea id="tw-message" name="message" rows="5" required class="w-full bg-transparent border border-white/10 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Tell me about your project..."></textarea>
+              </div>
+
+              <div class="flex items-center justify-between mt-auto">
+                <div id="tw-form-status" class="text-sm text-gray-300"></div>
+                <button type="submit" class="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold px-5 py-2 rounded-full transition">Send Message <i class="fa-solid fa-arrow-right text-sm"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn">
+      <!-- <i class="fa-solid fa-arrow-up"></i> -->
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- Scroll to Top Button End -->
+
+    <!-- Footer Section -->
+    <footer>
+      <!-- <p class="footer-text">Made with <span>❤️</span> by Soumyaranjan Behera</p> -->
+      <p class="footer-text text-sm font-semibold text-black">&copy; Soumyaranjan Behera. All rights reserved.</p>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

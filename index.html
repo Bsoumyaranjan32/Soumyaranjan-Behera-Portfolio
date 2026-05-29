@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soumyaranjan Behera — Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/SB-Icon.jpg">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <!-- Portfolio Stylesheet -->
+  <link rel="stylesheet" href="src/input.css">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+
+  <!-- Ambient Background Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Skip Link (Accessibility) -->
+  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-purple-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo">
+        <!-- <img src="assets/sb-icon.svg" alt="SB" class="logo-mark"> -->
+        <span class="logo-text">Soumyaranjan<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="menuBtn" class="icon-btn" aria-label="Toggle mobile menu" aria-expanded="false" style="display:none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu">
+      <nav class="mobile-nav-links">
+        <a class="mobile-nav-link" href="#home"     onclick="closeMobileMenu()">Home</a>
+        <a class="mobile-nav-link" href="#about"    onclick="closeMobileMenu()">About</a>
+        <a class="mobile-nav-link" href="#skills"   onclick="closeMobileMenu()">Skills</a>
+        <a class="mobile-nav-link" href="#projects" onclick="closeMobileMenu()">Projects</a>
+        <a class="mobile-nav-link" href="#contact"  onclick="closeMobileMenu()">Contact</a>
+      </nav>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="home">
+    <div class="hero-grid"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Text Content -->
+        <div class="hero-text">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Available for opportunities
+          </div>
+
+          <p class="hero-greeting">Hello, I'm</p>
+
+          <h1 class="hero-name">
+            <span class="name-white">Soumyaranjan</span><br>
+            <span class="name-gradient">Behera</span>
+          </h1>
+
+          <p class="hero-typed">
+            I am into&nbsp;<span id="typed-text"></span>
+          </p>
+
+          <div class="hero-buttons">
+            <!-- <a href="#about"    class="btn-primary">About Me <i class="fas fa-arrow-down" style="font-size:0.75rem"></i></a> -->
+            <a href="#contact"    class="btn-primary">Get In Touch <i class="fas fa-arrow-down" style="font-size:0.75rem"></i></a>
+            <a href="#projects" class="btn-ghost">View Projects <i class="fas fa-arrow-right" style="font-size:0.75rem"></i></a>
+          </div>
+
+          <div class="hero-social">
+            <span class="social-label">Connect with me</span>
+            <div class="social-divider"></div>
+            <div class="social-icons">
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/soumyaranjan-behera-497ba833a/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://x.com/__soumya__08__" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avatar -->
+        <div class="hero-avatar">
+          <div class="avatar-ring">
+            <img src="images/somu.jpg" alt="Soumyaranjan Behera"
+              onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Soumyaranjan+Behera&size=288&background=7c6af7&color=fff&font-size=0.33'">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image -->
+        <div class="about-image-wrap reveal">
+          <img src="images/IMG_0321.jpg" alt="Soumyaranjan Behera" class="about-img"
+            onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=SB&size=320&background=0e1525&color=7c6af7&font-size=0.45'">
+          <div class="about-img-deco-1"></div>
+          <div class="about-img-deco-2"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content reveal" style="transition-delay:0.15s">
+          <p class="section-subtitle">Who I Am</p>
+          <h2 class="section-title">Frontend Developer</h2>
+          <div class="section-line" style="margin-bottom:24px"></div>
+
+          <p class="about-text">
+            I'm a passionate frontend developer with a strong foundation in web technologies. I've completed TYBCOM and continue growing my skills in web development, software engineering, and emerging technologies. I'm a quick learner, highly adaptable, and committed to building innovative and user-centric digital solutions.
+          </p>
+          <p class="about-text" style="color:#94a3b8">
+            I enjoy solving complex problems and continuously improving my technical abilities. Let's connect and create something amazing together!
+          </p>
+
+          <!-- Stats -->
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num">10+</div>
+              <p class="stat-label">Projects</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">5+</div>
+              <p class="stat-label">Skills</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">∞</div>
+              <p class="stat-label">Passion</p>
+            </div>
+          </div>
+
+          <button onclick="resumeBtn()" class="btn-primary">
+            <i class="fas fa-download" style="font-size:0.8rem"></i> Download CV
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-subtitle">What I Know</p>
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="section-line center"></div>
+      </div>
+
+      <!-- Technologies -->
+      <div class="reveal" style="transition-delay:0.1s; margin-bottom:48px">
+        <p class="skills-category-label">Technologies</p>
+        <div class="skills-grid">
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#e34f26"><i class="fab fa-html5"></i></span>
+            <span class="s-label">HTML5</span>
+          </div>
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#1572b6"><i class="fab fa-css3-alt"></i></span>
+            <span class="s-label">CSS3</span>
+          </div>
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#38bdf8">
+              <!-- Tailwind SVG -->
+              <svg viewBox="0 0 24 24" fill="currentColor" height="2rem" width="2rem" aria-hidden="true">
+                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624C10.337,13.382,8.976,12,6.001,12z"/>
+              </svg>
+            </span>
+            <span class="s-label">Tailwind</span>
+          </div>
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#f7df1e"><i class="fab fa-js"></i></span>
+            <span class="s-label">JavaScript</span>
+          </div>
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#61dafb"><i class="fab fa-react"></i></span>
+            <span class="s-label">React JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="reveal" style="transition-delay:0.2s">
+        <p class="skills-category-label">Tools</p>
+        <div class="skills-grid-tools">
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#007acc"><i class="fas fa-code"></i></span>
+            <span class="s-label">VS Code</span>
+          </div>
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#f05032"><i class="fab fa-git-alt"></i></span>
+            <span class="s-label">Git</span>
+          </div>
+          <div class="skill-chip">
+            <span class="s-icon" style="color:#e2e8f0"><i class="fab fa-github"></i></span>
+            <span class="s-label">GitHub</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="services">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-subtitle">What I Offer</p>
+        <h2 class="section-title">Services</h2>
+        <div class="section-line center"></div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal" style="transition-delay:0.05s">
+          <div class="service-icon"><i class="fas fa-rocket"></i></div>
+          <h3 class="service-title">Optimization</h3>
+          <p class="service-desc">Boosting performance of existing websites through strategic optimization — faster loads, refined UIs, better SEO rankings and user satisfaction.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay:0.1s">
+          <div class="service-icon"><i class="fas fa-mobile-screen-button"></i></div>
+          <h3 class="service-title">Responsive Design</h3>
+          <p class="service-desc">Creating websites that seamlessly adapt to any device — delivering a consistent, optimal experience on desktop, tablet, and smartphone.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay:0.15s">
+          <div class="service-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <h3 class="service-title">Problem Solving</h3>
+          <p class="service-desc">Strong analytical skills for debugging, troubleshooting, and implementing efficient, scalable solutions to real-world challenges.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-subtitle">My Work</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line center"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- To-Do List -->
+        <div class="project-card reveal" style="transition-delay:0.0s">
+          <div class="project-img-wrap">
+            <img src="images/To-do-list.jpg" alt="To-Do List"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=200&fit=crop'">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-tailwind">Tailwind</span>
+              <span class="tag tag-js">JavaScript</span>
+              <span class="tag tag-react">React JS</span>
+            </div>
+            <h3 class="project-title">To-Do List</h3>
+            <p class="project-desc">Personal task management tool to list goals and activities with a clean, intuitive interface built in React.</p>
+            <div class="project-footer">
+              <a href="https://to-do-list-app.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="project-card reveal" style="transition-delay:0.05s">
+          <div class="project-img-wrap">
+            <img src="images/BMI Calculate.jpg" alt="BMI Calculator"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop'">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+              <span class="tag tag-tailwind">Tailwind</span>
+            </div>
+            <h3 class="project-title">BMI Calculator</h3>
+            <p class="project-desc">Calculates Body Mass Index from weight and height to help assess body fat and overall health status.</p>
+            <div class="project-footer">
+              <a href="https://bmi-calculator.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Image Generator -->
+        <div class="project-card reveal" style="transition-delay:0.1s">
+          <div class="project-img-wrap">
+            <img src="images/text-to-image.jpg" alt="AI Image Generator"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400&h=200&fit=crop'">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-tailwind">Tailwind</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">AI Image Generator</h3>
+            <p class="project-desc">AI-powered image generation app where users create stunning visuals from text prompts with a modern, responsive UI.</p>
+            <div class="project-footer">
+              <a href="https://ai-image-generate.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currency Converter -->
+        <div class="project-card reveal" style="transition-delay:0.15s">
+          <div class="project-img-wrap">
+            <img src="https://img.magnific.com/free-vector/currency-exchange-euro-rupee-golden-sign-background_1017-60308.jpg?w=740&q=80" alt="Currency Converter">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Currency Converter</h3>
+            <p class="project-desc">Converts amounts between different currencies using up-to-date exchange rates with a clean, user-friendly interface.</p>
+            <div class="project-footer">
+              <a href="https://currency-converter.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Neon Snake Game -->
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <div class="project-img-wrap">
+            <img src="https://t3.ftcdn.net/jpg/09/55/39/32/240_F_955393249_L8pnJDiRHv6OviwOZM9miU227XekmGjv.jpg" alt="Neon Snake Game">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Neon Snake Game</h3>
+            <p class="project-desc">Arcade-style browser game with retro neon visuals. Guide the snake, grow longer, and beat high scores while avoiding collisions.</p>
+            <div class="project-footer">
+              <a href="https://neon-snake-game.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weather App -->
+        <div class="project-card reveal" style="transition-delay:0.25s">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1705077296278-d82dd5c8662f?w=400&h=200&fit=crop" alt="Weather App">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">Provides real-time weather forecasts, current temperature, and atmospheric conditions using a live weather API.</p>
+            <div class="project-footer">
+              <a href="https://weather-app.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expense Tracker -->
+        <div class="project-card reveal" style="transition-delay:0.3s">
+          <div class="project-img-wrap">
+            <img src="https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?w=400&h=200&fit=crop" alt="Expense Tracker">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Expense Tracker</h3>
+            <p class="project-desc">Comprehensive tracker to monitor daily spending, categorize expenses, and maintain financial health with visual insights.</p>
+            <div class="project-footer">
+              <a href="https://expense-tracker.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typing Speed Test -->
+        <div class="project-card reveal" style="transition-delay:0.35s">
+          <div class="project-img-wrap">
+            <img src="images/typingspeedtest.png" alt="Typing Speed Test"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=200&fit=crop'">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Typing Speed Test</h3>
+            <p class="project-desc">Real-time WPM calculator with countdown timer and dynamic text highlighting to track progress as you type.</p>
+            <div class="project-footer">
+              <a href="https://typing-speed-test.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simple Calculator -->
+        <div class="project-card reveal" style="transition-delay:0.4s">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?w=400&h=200&fit=crop" alt="Simple Calculator">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Simple Calculator</h3>
+            <p class="project-desc">Performs basic mathematical operations — addition, subtraction, multiplication, and division — with a clean interface.</p>
+            <div class="project-footer">
+              <a href="https://simple-calculator.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Age Calculator -->
+        <div class="project-card reveal" style="transition-delay:0.4s">
+          <div class="project-img-wrap">
+            <img src="images/Age Calculator.png" alt="Age Calculator">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Age Calculator</h3>
+            <p class="project-desc">An Age Calculator is a simple and useful tool that quickly calculates a person's exact age from their date of birth in years, months, and days.</p>
+            <div class="project-footer">
+              <a href="https://age-calculator.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion / FAQ -->
+        <div class="project-card reveal" style="transition-delay:0.4s">
+          <div class="project-img-wrap">
+            <img src="images/FAQ.png" alt="Accordion / FAQ">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <h3 class="project-title">Accordion / FAQ</h3>
+            <p class="project-desc">An interactive and responsive FAQ accordion component built with vanilla JavaScript. Features smooth toggle animations, clean semantic markup, and optimized user experience for navigating frequent queries.</p>
+            <div class="project-footer">
+              <a href="https://accordion-faq.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech book club landing page -->
+        <div class="project-card reveal" style="transition-delay:0.4s">
+          <div class="project-img-wrap">
+            <img src="images/tech book.jpg" alt="Tech book club landing page">
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+            </div>
+            <h3 class="project-title">Tech book club landing page</h3>
+            <p class="project-desc">A beautifully structured and fully responsive landing page for a Tech Book Club. Built entirely with clean semantic HTML5 and modern CSS3 layout techniques like Flexbox/Grid, focusing on pixel-perfect UI design, elegant typography, and a seamless user experience across all devices.</p>
+            <div class="project-footer">
+              <a href="https://tech-book-club.devpixels.tech/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+              <a href="https://github.com/Bsoumyaranjan32" target="_blank" class="github-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+
+      <div class="projects-more reveal">
+        <a href="https://github.com/Bsoumyaranjan32" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+          <i class="fab fa-github"></i> View More on GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-subtitle">Say Hello</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line center"></div>
+        <p style="color:#94a3b8;font-size:0.88rem;margin-top:16px;max-width:420px;margin-left:auto;margin-right:auto">
+          If you have any questions or would like to work together, feel free to reach out!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info Card -->
+        <div class="contact-card reveal">
+          <h3 class="contact-card-title">Let's Work Together</h3>
+          <p class="contact-card-desc">I'm a Frontend Developer building intuitive, responsive web apps — happy to collaborate on UI-focused projects.</p>
+
+          <div class="contact-links">
+            <a href="mailto:bsoumyaranjan370@gmail.com" class="contact-row">
+              <div class="contact-icon-box" style="background:rgba(52,211,153,0.1);color:#34d399">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <p class="contact-row-title">Email</p>
+                <p class="contact-row-sub">bsoumyaranjan370@gmail.com</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/soumyaranjan-behera-497ba833a/" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <div class="contact-icon-box" style="background:rgba(59,130,246,0.1);color:#60a5fa">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div>
+                <p class="contact-row-title">LinkedIn</p>
+                <p class="contact-row-sub">Connect with me professionally</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Bsoumyaranjan32" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <div class="contact-icon-box contact-icon-github">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <p class="contact-row-title">GitHub</p>
+                <p class="contact-row-sub">Check out my projects and code</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="contact-card reveal" style="transition-delay:0.1s">
+          <form id="contactForm" action="https://formsubmit.co/bsoumyaranjan370@gmail.com" method="POST">
+            <!-- Honeypot + no captcha -->
+            <input type="text" name="_honey" style="display:none" autocomplete="off" tabindex="-1">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="./index.html#contact">
+
+            <div class="form-row">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required class="input-field" placeholder="John Doe">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required class="input-field" placeholder="john@example.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required class="input-field" placeholder="Project inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required class="input-field" placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <div class="form-footer">
+              <span id="formStatus"></span>
+              <button type="submit" class="btn-primary" style="font-size:0.88rem;padding:11px 24px">
+                Send Message <i class="fas fa-paper-plane" style="font-size:0.75rem"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">
+        © 2026 <span>Soumyaranjan Behera</span>. All rights reserved.
+      </p>
+      <!-- <p class="footer-made">
+        Made with <span class="heart">♥</span> and passion
+        <span class="footer-sep">•</span>
+        <span class="footer-tech">Built with HTML, CSS & JavaScript</span>
+      </p> -->
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
+  <!-- Typed.js CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Portfolio Script -->
+  <script src="script.js"></script>
+
+  <!-- Mobile menu button visibility via JS (avoids CSS-only flash) -->
+  <script>
+    document.getElementById('menuBtn').style.display = 'flex';
+    // Hide on desktop
+    function checkMenuBtn() {
+      document.getElementById('menuBtn').style.display =
+        window.innerWidth < 768 ? 'flex' : 'none';
+    }
+    checkMenuBtn();
+    window.addEventListener('resize', checkMenuBtn);
+  </script>
+
+</body>
+</html>

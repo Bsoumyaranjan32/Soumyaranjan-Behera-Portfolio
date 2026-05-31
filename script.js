@@ -176,8 +176,8 @@ function resumeBtn() {
   fetch(resumeUrl, { method: 'HEAD' })
     .then(res => {
       if (res.ok) window.open(resumeUrl, '_blank');
-      else window.open('assets/Soumyaranjan_Behera Resume.pdf', '_blank');
+      else window.open('assets/Soumyaranjan Behera Resume.pdf', '_blank');
     })
-    .catch(() => window.open('assets/Soumyaranjan_Behera Resume.pdf', '_blank'));
+    .catch(() => window.open('assets/Soumyaranjan Behera Resume.pdf', '_blank'));
 }
 

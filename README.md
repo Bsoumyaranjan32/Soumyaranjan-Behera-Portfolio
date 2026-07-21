@@ -1,6 +1,6 @@
 # Portfolio — Soumyaranjan Behera
 
-This is a personal portfolio built with HTML, Tailwind CSS and vanilla JavaScript.
+This is a personal portfolio built with HTML, Tailwind CSS and JavaScript.
 
 ## Setup
 

@@ -470,7 +470,7 @@ html:not(.dark) #navbar.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 20px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
   color: #cbd5e1;
